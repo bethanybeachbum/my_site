@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %} <!-- loads extra functionality -->
+
+
+
+{% block page_title  %}
+  The Experiment Blog
+{% endblock %}   
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "blog/post.css" %}">
+<link rel="stylesheet" href="{% static "blog/index.css" %}">
+<!-- <link rel="stylesheet" href="{% static "blog/includes/header.css" %}"> -->
+{% endblock %}
+<!-- -->
+{% block content  %}
+
+
+<section id="welcome">
+  <header>
+    <img src="{% static "blog/images/M+L_VT_bike.jpg" %}" alt="Mark - The Author of this blog" />
+    <div>
+    <h2>The Experiment</h2>
+    <h2>Blog by Mark &amp; Lauri </h2> 
+    </div>
+  </header>
+  <p>Welcome the the Retirement Experiment.  We moved to the beach, Bethany Beach specifically, to determine if the casual life away from the big city is for us.</p>
+</section>
+
+<section id="latest-posts">
+  <header>
+    
+    <!-- <img src="{% static "blog/images/Mark_pushup_sm.jpg" %}" alt="Mark - The Author of this blog" />  -->
+    
+    <h2>Our Latest Thoughts </h2> 
+    <ul>
+      {% include "blog/includes/post.html" %}  
+    </ul>
+  </header>
+  <p>Welcome the the Retirement Experiment.  We moved to the beach, Bethany Beach specifically, to determine if the casual life away from the big city is for us.</p>
+</section>
+
+<section id="about">
+  <h2> What We Do </h2>
+    <p> Mark loves programming and teaching others. He also exercises daily with an emphasis on cardio.  Lauri loves natural health solutions and latest trendy fashions.</p>
+    <p>Mark's goal is to stay in shape and healthy - and if I can help you do the same, I'd be very happy!  Lauri has helped many fellow women with stylish fashion solutions that fit their lifestyles.  She also has a penchant for seaking out natural and homeopathic medical solutions.
+    </p> 
+</section>
+
+{% endblock %}

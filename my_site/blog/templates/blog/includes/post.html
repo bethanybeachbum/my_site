@@ -1,0 +1,29 @@
+{% load static %}
+<li>
+    <article class="post">
+      <a href="{% url "post-detail-page" "the-beach" %}">
+      <img src="{% static "blog/images/Beach_sm2.JPG" %}" alt="Beach Life"/>
+        <div class="post__content">
+          <h3> Beach Life </h3>
+            <p> Nothing like a casual sunny warm day on the beach!  And I wasn't prepared for what happened whilst I enjoyed the view of the ocean!
+            </p>
+        </div>
+      </a>
+    </article>
+  </li>
+
+
+
+
+
+
+<!--
+<header>
+    <nav>
+        <a href="{% url "starting-page" %}">All Posts</a>
+    </nav>
+</header>
+
+<p> You are on the {{active_page}} page</p>
+<hr>
+-->
