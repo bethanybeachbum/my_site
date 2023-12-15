@@ -34,7 +34,10 @@
     
     <h2>Our Latest Thoughts </h2> 
     <ul>
-      {% include "blog/includes/post.html" %}  
+      {% for post in posts %} <!-- posts is a key from the starting_page view -->
+      {% include "blog/includes/post.html" %} 
+      {% endfor %}
+        
     </ul>
   </header>
   <p>Welcome the the Retirement Experiment.  We moved to the beach, Bethany Beach specifically, to determine if the casual life away from the big city is for us.</p>
