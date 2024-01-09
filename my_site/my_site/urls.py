@@ -21,5 +21,6 @@ urlpatterns = [
     
     path('admin/', admin.site.urls),
     path("", include("blog.urls")),  # http://localhost:8000
-    path("product_outlet/", include("product_outlet.urls"))
+    path("product_outlet/", include("product_outlet.urls")),
+    path("feedback/", include("feedback.urls"))
 ]
